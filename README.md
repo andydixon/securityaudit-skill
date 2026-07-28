@@ -14,10 +14,10 @@ Practical skills for Codex and Claude Code, centred on deep security review and 
 Paste these into Codex if you prefer installing through `$skill-installer`:
 
 ```text
-Use $skill-installer to install https://github.com/andydixon/securityaudit-skill/tree/main/securityaudit
-Use $skill-installer to install https://github.com/andydixon/securityaudit-skill/tree/main/aitm
-Use $skill-installer to install https://github.com/andydixon/securityaudit-skill/tree/main/debullshit
-Use $skill-installer to install https://github.com/andydixon/securityaudit-skill/tree/main/summarise
+Use $skill-installer to install https://github.com/andydixon/codex-skills/tree/main/securityaudit
+Use $skill-installer to install https://github.com/andydixon/codex-skills/tree/main/aitm
+Use $skill-installer to install https://github.com/andydixon/codex-skills/tree/main/debullshit
+Use $skill-installer to install https://github.com/andydixon/codex-skills/tree/main/summarise
 ```
 
 Restart Codex after installation.
@@ -25,13 +25,13 @@ Restart Codex after installation.
 Or install all skills from Terminal on macOS/Linux:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/andydixon/securityaudit-skill/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/andydixon/codex-skills/main/install.sh | bash
 ```
 
 Or from PowerShell on Windows:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12; Invoke-RestMethod https://raw.githubusercontent.com/andydixon/securityaudit-skill/main/install.ps1 | Invoke-Expression"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12; Invoke-RestMethod https://raw.githubusercontent.com/andydixon/codex-skills/main/install.ps1 | Invoke-Expression"
 ```
 
 The Codex installer writes skills to `~/.codex/skills`.
@@ -41,13 +41,13 @@ The Codex installer writes skills to `~/.codex/skills`.
 Install all skills from Terminal on macOS/Linux:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/andydixon/securityaudit-skill/main/install-claude.sh | bash
+curl -fsSL https://raw.githubusercontent.com/andydixon/codex-skills/main/install-claude.sh | bash
 ```
 
 Or from PowerShell on Windows:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12; Invoke-RestMethod https://raw.githubusercontent.com/andydixon/securityaudit-skill/main/install-claude.ps1 | Invoke-Expression"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12; Invoke-RestMethod https://raw.githubusercontent.com/andydixon/codex-skills/main/install-claude.ps1 | Invoke-Expression"
 ```
 
 The Claude Code installer writes skills to `~/.claude/skills`. Restart Claude Code if it was already open.
@@ -64,7 +64,7 @@ To install only some of them, set `SECURITYAUDIT_SKILLS` to a space- or comma-se
 
 ```bash
 export SECURITYAUDIT_SKILLS="securityaudit aitm"
-curl -fsSL https://raw.githubusercontent.com/andydixon/securityaudit-skill/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/andydixon/codex-skills/main/install.sh | bash
 ```
 
 The installers also support `SECURITYAUDIT_REPO` and `SECURITYAUDIT_REF` if you need to install from another repository or branch. When run from a local checkout, they install from that checkout instead of downloading from GitHub.
